@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Colorado Canine Lifestyle Center — professional dog training, puppy obedience, board & train, dog walking, and Colorado mountain adventures.">
+<title>Colorado Canine Lifestyle Center | Dog Training & Adventures</title>
+<style>
+:root{--forest:#17352c;--pine:#245446;--sand:#f5efe3;--cream:#fffaf1;--gold:#c9934c;--ink:#1d2925;--muted:#63706a;--white:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,250,241,.95);backdrop-filter:blur(10px);border-bottom:1px solid #e9e0d1}
+.navin{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;color:var(--forest);line-height:1.05}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--gold);margin-top:4px}
+nav a{color:var(--forest);text-decoration:none;font-weight:700;margin-left:22px;font-size:14px}.btn{display:inline-block;padding:13px 19px;border-radius:999px;background:var(--gold);color:#fff!important;text-decoration:none;font-weight:800;box-shadow:0 8px 20px #8f69362a}
+.hero{min-height:78vh;display:grid;place-items:center;overflow:hidden;position:relative;background:linear-gradient(180deg,#dbe8e2 0%,#eef0e6 48%,#b9c7b5 49%,#5d7562 100%)}
+.mountains{position:absolute;inset:auto 0 0;width:100%;height:62%;opacity:.9}.mountains:before,.mountains:after{content:"";position:absolute;bottom:0;width:0;height:0;border-left:42vw solid transparent;border-right:42vw solid transparent;border-bottom:54vh solid #315a4d}.mountains:before{left:-26vw}.mountains:after{right:-26vw;border-bottom-color:#1f443b}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(13,40,33,.5))}
+.hero-content{position:relative;z-index:2;max-width:850px;text-align:center;padding:80px 22px;color:white;text-shadow:0 2px 18px #10261f99}.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:900;color:#f8d79f}.hero h1{font-family:Georgia,serif;font-size:clamp(44px,8vw,82px);line-height:.98;margin:12px 0 20px}.hero p{font-size:clamp(18px,2.3vw,23px);max-width:700px;margin:0 auto 28px}.hero .btn{background:var(--gold);text-shadow:none}
+section{padding:78px 22px}.wrap{max-width:1120px;margin:auto}.section-head{max-width:700px;margin-bottom:36px}.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:900;font-size:12px}.section-head h2{font-family:Georgia,serif;font-size:clamp(34px,5vw,52px);line-height:1.05;color:var(--forest);margin:8px 0 14px}.section-head p{color:var(--muted);font-size:17px}
+.intro{background:var(--cream)}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.quote{background:var(--forest);color:white;border-radius:26px;padding:35px}.quote h3{font-family:Georgia,serif;font-size:30px;margin:0 0 12px}.quote p{opacity:.9}.quote strong{color:#f4cf92}
+.services{background:var(--sand)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #eadfcd;border-radius:22px;padding:27px;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 15px 35px #17352c14}.icon{font-size:30px}.card h3{color:var(--forest);margin:8px 0 5px;font-size:22px}.price{color:var(--gold);font-weight:900;margin-bottom:10px}.card p{color:var(--muted);margin:0}
+.process{background:var(--forest);color:white}.process .section-head h2{color:white}.process .section-head p{color:#d8e4de}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{border:1px solid #ffffff25;border-radius:20px;padding:25px}.num{font-size:13px;color:#f0c783;font-weight:900;letter-spacing:2px}.step h3{margin:7px 0;color:white}.step p{color:#cbd9d3}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.badge{background:var(--sand);border-radius:28px;padding:38px;text-align:center}.badge .big{font-size:58px;font-weight:900;color:var(--forest);font-family:Georgia,serif}.badge p{margin:4px 0;color:var(--muted);font-weight:700}.about-copy p{color:var(--muted);font-size:17px}.check{display:flex;gap:10px;margin:12px 0;font-weight:700}.check span{color:var(--gold)}
+.cta{background:linear-gradient(135deg,#dfe9e3,#f5efe3)}.cta-box{background:var(--forest);color:white;border-radius:30px;padding:55px;text-align:center}.cta h2{font-family:Georgia,serif;font-size:clamp(35px,5vw,54px);margin:0 0 12px}.cta p{color:#d7e3de;max-width:650px;margin:0 auto 25px}.contact{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.contact a{color:white;text-decoration:none;border:1px solid #ffffff35;border-radius:999px;padding:10px 16px;font-weight:700}
+footer{background:#102821;color:#b9c9c1;padding:30px 22px;text-align:center;font-size:13px}footer strong{color:white}
+@media(max-width:800px){nav a:not(.btn){display:none}.intro-grid,.about-grid{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}.hero{min-height:75vh}.cta-box{padding:40px 22px}}
+</style>
+</head>
+<body>
+<nav><div class="navin"><div class="brand">COLORADO CANINE<small>LIFESTYLE CENTER</small></div><div><a href="#services">Services</a><a href="#about">About</a><a href="#contact" class="btn">Get Started</a></div></div></nav>
+
+<header class="hero">
+  <div class="mountains"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Denver • Colorado • Beyond</div>
+    <h1>Train. Explore. Thrive.</h1>
+    <p>Professional dog training and real-world adventures designed to build confident, fulfilled dogs — and confident dog owners.</p>
+    <a class="btn" href="#contact">Start Your Dog's Journey</a>
+  </div>
+</header>
+
+<section class="intro">
+<div class="wrap intro-grid">
+<div class="section-head">
+<div class="kicker">More than a dog sitter</div>
+<h2>Dogs deserve a lifestyle, not just a walk.</h2>
+<p>Colorado Canine Lifestyle Center combines professional training with physical exercise, mental stimulation and meaningful real-world experiences.</p>
+<p>From puppy foundations to advanced obedience and behavior work, the goal is simple: create skills that hold up outside the training room.</p>
+</div>
+<div class="quote"><h3>“Good behavior is built through everyday life.”</h3><p>Training can happen on a mountain trail, at a park, around distractions, or during a normal walk through the neighborhood.</p><strong>— Colorado Canine Lifestyle Center</strong></div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Services</div><h2>Training built around your dog.</h2><p>Choose a focused session or a more immersive experience. Board & Train pricing is customized based on length and training goals.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🎯</div><h3>Private Training</h3><div class="price">$80 / session</div><p>One-on-one coaching for obedience, manners, engagement, impulse control and behavior goals.</p></div>
+<div class="card"><div class="icon">🐾</div><h3>Puppy Obedience</h3><div class="price">$500 / 2 weeks</div><p>Build a strong foundation for young dogs with clear communication, engagement, boundaries and everyday skills.</p></div>
+<div class="card"><div class="icon">🏡</div><h3>Board & Train</h3><div class="price">1–3 weeks • Inquire</div><p>Immersive training focused on your dog's individual goals, with skills practiced throughout daily life.</p></div>
+<div class="card"><div class="icon">🏔️</div><h3>Mountain Adventures</h3><div class="price">$80 / 3–4 hours</div><p>Structured outdoor adventures that combine exercise, enrichment and real-world training.</p></div>
+<div class="card"><div class="icon">🚶</div><h3>Dog Walking</h3><div class="price">$20 / 30 min • $30 / 1 hr</div><p>More than a potty break — structured walks can reinforce calm movement and good leash habits.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Behavior & Obedience</h3><div class="price">Private • Customized</div><p>Work on reactivity, impulse control, place, recall, loose-leash walking and engagement.</p></div>
+</div></div>
+</section>
+
+<section class="process">
+<div class="wrap">
+<div class="section-head"><div class="kicker">The lifestyle approach</div><h2>Training that follows you into the real world.</h2><p>Dogs learn best when skills are practiced where life actually happens.</p></div>
+<div class="steps">
+<div class="step"><div class="num">01 / FOUNDATION</div><h3>Build communication</h3><p>Clear markers, engagement, boundaries and core obedience create a language you and your dog understand.</p></div>
+<div class="step"><div class="num">02 / DISTRACTIONS</div><h3>Add real-world challenges</h3><p>Practice around people, dogs, environments and everyday distractions while maintaining calm focus.</p></div>
+<div class="step"><div class="num">03 / LIFESTYLE</div><h3>Make it part of life</h3><p>Turn training into habits you can maintain on walks, adventures and at home.</p></div>
+</div></div>
+</section>
+
+<section class="about" id="about">
+<div class="wrap about-grid">
+<div class="badge"><div class="big">8+</div><p>YEARS WORKING WITH DOGS</p><hr><p>Professional dog trainer<br>Certified through Catch Canine</p></div>
+<div class="about-copy"><div class="section-head"><div class="kicker">Meet your trainer</div><h2>Experience, structure and a love for the outdoors.</h2></div>
+<p>Colorado Canine Lifestyle Center was created for dog owners who want more than basic care. The approach combines professional training with the physical and mental fulfillment dogs need.</p>
+<div class="check"><span>✓</span> Practical obedience for everyday life</div>
+<div class="check"><span>✓</span> Individualized training goals</div>
+<div class="check"><span>✓</span> Structured exercise and enrichment</div>
+<div class="check"><span>✓</span> Colorado outdoor adventures</div>
+</div>
+</div>
+</section>
+
+<section class="cta" id="contact">
+<div class="wrap"><div class="cta-box">
+<div class="kicker">Ready to get started?</div><h2>Let's build a better life with your dog.</h2>
+<p>Tell me about your dog, what you're working on, and what you want your life together to look like.</p>
+<div class="contact">
+<a href="mailto:Cok9lifestylecenter@gmail.com">✉ Cok9lifestylecenter@gmail.com</a>
+<a href="https://www.tiktok.com/@cok9lifestylecenter" target="_blank" rel="noopener">♪ TikTok @cok9lifestylecenter</a>
+</div>
+<br><a class="btn" href="mailto:Cok9lifestylecenter@gmail.com?subject=Training%20Inquiry">Email to Book / Inquire</a>
+</div></div>
+</section>
+
+<footer><strong>Colorado Canine Lifestyle Center LLC</strong><br>Professional Dog Training • Colorado Adventures • Real-World Obedience<br><span>© 2026 Colorado Canine Lifestyle Center LLC</span></footer>
+</body></html>
